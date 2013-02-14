@@ -106,10 +106,10 @@ function ptisp_RegisterDomain($params) {
             $contact = $result["nichandle"];
         }
     } else if (empty($params["additionalfields"]["Nichandle"])) {
-        $contact =  $params["additionalfields"]["Nichandle"]);
+        $contact =  $params["additionalfields"]["Nichandle"];
     }
 
-    if (empty($contact) {
+    if (empty($contact)) {
         $par = array("ns" => $params["ns1"]);
     } else {
         $par = array("ns" => $params["ns1"], "contact" => $contact);
